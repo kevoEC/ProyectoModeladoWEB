@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1 class="mt-4">BIENVENIDO</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Controla todo el movimiento de tu empresa</li>
+</ol>
+
+<div class="row">
+    <div class="col-xl-3 col-md-6">
+        <a class="card bg-primary text-white mb-4 text-decoration-none" href="@Url.Action("Usuarios","Home") ">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <h6>Cantidad Usuarios</h6>
+                        <h6 id="totalcliente"></h6>
+                    </div>
+                    <div class="col-sm-3">
+                        <i class="fas fa-users fa-2x"></i>
+                    </div>
+                </div>
+
+            </div>
+        </a>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <a class="card bg-warning text-white mb-4 text-decoration-none" href="@Url.Action("Categoria","Mantenedor")">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <h6>Categorias</h6>
+                        <h6 id="totalmarcas"></h6>
+                    </div>
+                    <div class="col-sm-3">
+                        <i class="fas fa-table fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <a class="card bg-success text-white mb-4 text-decoration-none" href="@Url.Action("Marca","Mantenedor")">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <h6>Marcas</h6>
+                        <h6 id="totalcategorias"></h6>
+                    </div>
+                    <div class="col-sm-3">
+                        <i class="fas fa-bookmark fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <a class="card bg-secondary text-white mb-4 text-decoration-none" href="@Url.Action("Producto","Mantenedor")">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <h6>Productos</h6>
+                        <h6 id="totalproductos"></h6>
+                    </div>
+                    <div class="col-sm-3">
+                        <i class="fas fa-boxes fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div>
+        <img src="~/images/imagenPrincipal.png" class="img-fluid mx-auto d-block" alt="" />
+    </div>
+</div>
